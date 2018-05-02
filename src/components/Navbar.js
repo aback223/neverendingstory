@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import '../App.css'
 
 const Navbar = () => {
-  return <h3>Title</h3>
+  return <h1 className="navbar-title">NeverEndingStory</h1>
 };
 
 export default Navbar;
