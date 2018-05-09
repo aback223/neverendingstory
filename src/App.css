@@ -18,25 +18,21 @@ a.navbar-title {
 }
 
 .navbar {
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
   background: #ff69b4;
   width: 320px;
   overflow: hidden;
 }
 
 .storyContainer {
+  flex-direction: column;
+  padding: 20px 50px 20px 50px;
+  box-sizing: border-box;
   background: aliceblue;
   width: 100%;
   overflow: scroll;
-}
-
-.navbar {
-  flex-direction: column;
-  padding: 10px;
-}
-
-.storyContainer {
-  flex-direction: column;
-  padding: 20px 50px 20px 50px
 }
 
 .topLeft {
@@ -44,7 +40,10 @@ a.navbar-title {
 }
 
 .topRight {
-  height: 100px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: flex;
 }
 
 .content {
@@ -58,6 +57,7 @@ a.navbar-title {
   font-family: 'Roboto Mono', monospace;
   font-size: 40px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .bottom a, a:visited, a.navbar-title {
