@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One|Roboto+Slab');
 
 html,
 body, #root {
@@ -29,12 +29,22 @@ body, #root {
   overflow: scroll;
 }
 
-.navbar, .storyContainer {
+.navbar {
   flex-direction: column;
   padding: 10px;
 }
 
+.storyContainer {
+  flex-direction: column;
+  padding: 0px 50px 0px 50px
+}
+
 .topLeft {
   height: 200px;
+}
+
+.content {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
 }
 
