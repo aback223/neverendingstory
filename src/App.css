@@ -52,6 +52,7 @@ form.storyInput textarea{
   box-sizing: border-box;
   width: 98%;
   margin: 10px;
+  padding: 10px;
 }
 
 .bottomContent {
