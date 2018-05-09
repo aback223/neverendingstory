@@ -7,8 +7,11 @@ class StoryContainer extends Component {
     // return <Story contents={this.state.contents} />
     return (
     <div className="storyContainer">
-      <Story />
-      <StoryInput />
+      <div className="topRight"><div>
+      <div className="bottom">
+        <Story />
+        <StoryInput />
+      </div>
     </div>
     )
   }
