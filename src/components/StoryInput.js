@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 class StoryInput extends Component {
   render() {
     return (
-      <p>this is the story input.</p>
+      <form>
+        <input 
+          type="text" 
+          placeholder="What do you think should happen next?"/>
+      </form>
     )
   }
 }
