@@ -52,9 +52,11 @@ body, #root {
   display: block;
   padding: 10px;
   font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .bottom a, a:visited {
   text-decoration: none;
+  color: black;
 }
