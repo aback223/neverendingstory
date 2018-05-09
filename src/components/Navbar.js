@@ -8,8 +8,8 @@ const Navbar = () => {
         <div className="navbar-title">Never<br/>Ending<br/>Story</div>
       </div>
       <div className="bottom">
-        <h3><a href="#">Link 1</a></h3>
-        <h3><a href="#">Link 2</a></h3>
+        <h1><a href="#">Link 1</a></h1>
+        <h1><a href="#">Link 2</a></h1>
       </div>
     </div>
   )
