@@ -4,7 +4,7 @@ class StoryInput extends Component {
   render() {
     return (
       <form className="storyInput">
-        <input 
+        <textarea
           type="text" 
           placeholder="What do you think should happen next?"/>
       </form>
