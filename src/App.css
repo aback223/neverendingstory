@@ -37,7 +37,6 @@ a.navbar-title {
 }
 
 .topRight {
-  top: 10;
   width: 100%;
   display: inline-flex;
   flex-shrink: 0;
