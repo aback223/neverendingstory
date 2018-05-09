@@ -7,7 +7,7 @@ body, #root {
   margin: 0;
 }
 
-.navbar-title {
+a.navbar-title {
   font-family: 'Bungee Shade', cursive;
   font-size: 40px;
 }
@@ -56,7 +56,11 @@ body, #root {
   text-align: center;
 }
 
-.bottom a, a:visited {
+.bottom a, a:visited, a.navbar-title {
   text-decoration: none;
   color: black;
+}
+
+a:hover, a.navbar-title:hover {
+  color: white;
 }
