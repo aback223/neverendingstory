@@ -6,10 +6,9 @@ import StoryInput from './StoryInput';
 class Homepage extends Component {
   render() {
     return (
-      <div>
+      <div className="homepageContainer">
         <Navbar />
         <StoryContainer />
-        <StoryInput />
       </div>
     );
   }
