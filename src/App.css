@@ -21,14 +21,14 @@ a.navbar-title {
 .navbar {
   padding: 10px;
   background: #ff69b4;
-  width: 250px;
   flex-shrink: 0;
+  box-sizing: border-box;
+  width: 250px;
 }
 
 .storyContainer {
   flex-direction: column;
   background: aliceblue;
-  width: 100%;
   display: flex;
 }
 
@@ -37,7 +37,6 @@ a.navbar-title {
 }
 
 .topRight {
-  width: 100%;
   display: inline-flex;
   flex-shrink: 0;
 }
@@ -48,15 +47,18 @@ a.navbar-title {
 
 form.storyInput textarea{
   font-size: 30px;
-  box-sizing: border-box;
   resize: none;
-  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  width: 98%;
+  margin: 10px;
 }
 
 .bottomContent {
   font-family: 'Roboto Slab', serif;
   font-size: 50px;
   overflow-y: auto;
+  padding: 20px;
 }
 
 .bottomNavbar a {
