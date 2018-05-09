@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One');
 
 html,
 body, #root {
@@ -8,7 +8,8 @@ body, #root {
 }
 
 .navbar-title {
-  /*font-family: 'Grand Hotel', cursive;*/
+  font-family: 'Nixie One', cursive;
+  font-size: 50px;
 }
 
 .homepageContainer {
@@ -32,6 +33,6 @@ body, #root {
 }
 
 .topLeft {
-  height: 120px;
+  height: 200px;
 }
 
