@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="topLeft">
-        <div className="navbar-title">Never<br/>Ending<br/>Story</div>
+        <a href="#" className="navbar-title">Never<br/>Ending<br/>Story</a>
       </div>
       <div className="bottom">
         <a href="#">Link 1</a>
