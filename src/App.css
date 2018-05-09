@@ -43,6 +43,7 @@ a.navbar-title {
 
 .topRight form {
   width: 100%;
+  padding: 10px;
 }
 
 form.storyInput textarea{
@@ -50,8 +51,7 @@ form.storyInput textarea{
   resize: none;
   height: 200px;
   box-sizing: border-box;
-  width: 98%;
-  margin: 10px;
+  width: 100%;
   padding: 10px;
 }
 
