@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
-import StoryContainer from '../containers/StoryContainer'
+import StoryContainer from '../containers/StoryContainer';
+import StoryInput from './StoryInput';
 
 class Homepage extends Component {
   render() {
@@ -8,6 +9,7 @@ class Homepage extends Component {
       <div>
         <Navbar />
         <StoryContainer />
+        <StoryInput />
       </div>
     );
   }
