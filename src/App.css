@@ -13,35 +13,24 @@ body, #root {
 
 .homepageContainer {
   height: 100%;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: box;
-  
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -ms-box-orient: horizontal;
-  box-orient: horizontal;
+  display: flex;
 }
 
 .navbar {
   background: #ff69b4;
-  width: 280px;
-  -ms-flex: 0 100px;
-  -webkit-box-flex:  0;
-  -moz-box-flex:  0;
-  -ms-box-flex:  0;
-  box-flex:  0;
+  width: 230px;
 }
 
 .storyContainer {
-  padding-top: 100px;
   background: aliceblue;
-  -ms-flex: 1;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -ms-box-flex: 1;
-  box-flex: 1;  
+  width: 100%;
 }
+
+.navbar, .storyContainer {
+  flex-direction: column;
+}
+
+.topLeft {
+  height: 120px;
+}
+
