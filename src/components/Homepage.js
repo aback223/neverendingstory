@@ -7,6 +7,7 @@ class Homepage extends Component {
     return (
       <div>
         <Navbar />
+        <StoryContainer />
       </div>
     );
   }
