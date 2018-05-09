@@ -20,7 +20,6 @@ body, #root {
 .navbar {
   background: #ff69b4;
   width: 220px;
-  padding: 10px;
 }
 
 .storyContainer {
@@ -30,6 +29,7 @@ body, #root {
 
 .navbar, .storyContainer {
   flex-direction: column;
+  padding: 10px;
 }
 
 .topLeft {
