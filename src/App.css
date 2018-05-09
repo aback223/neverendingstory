@@ -18,7 +18,8 @@ body, #root {
 
 .navbar {
   background: #ff69b4;
-  width: 230px;
+  width: 220px;
+  padding: 10px;
 }
 
 .storyContainer {
