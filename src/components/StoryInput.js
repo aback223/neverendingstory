@@ -7,6 +7,7 @@ class StoryInput extends Component {
         <textarea
           type="text" 
           placeholder="What do you think should happen next?"/>
+        <input type="submit" />
       </form>
     )
   }
