@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
 
 html,
-body {
+body, #root {
   height: 100%;
   padding: 0;
   margin: 0;
