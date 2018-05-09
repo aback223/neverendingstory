@@ -36,11 +36,15 @@ a.navbar-title {
 
 .storyContainer {
   flex-direction: column;
-  padding: 0px 50px 20px 50px
+  padding: 20px 50px 20px 50px
 }
 
 .topLeft {
   height: 200px;
+}
+
+.topRight {
+  height: 100px;
 }
 
 .content {
