@@ -43,6 +43,10 @@ a.navbar-title {
   flex-shrink: 0;
 }
 
+.topRight form {
+  width: 100%;
+}
+
 form.storyInput textarea{
   font-size: 30px;
   box-sizing: border-box;
