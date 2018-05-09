@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nixie+One|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto+Slab');
 
 html,
 body, #root {
@@ -8,8 +8,8 @@ body, #root {
 }
 
 .navbar-title {
-  font-family: 'Nixie One', cursive;
-  font-size: 50px;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 45px;
 }
 
 .homepageContainer {
@@ -19,7 +19,7 @@ body, #root {
 
 .navbar {
   background: #ff69b4;
-  width: 270px;
+  width: 320px;
   overflow: hidden;
 }
 
