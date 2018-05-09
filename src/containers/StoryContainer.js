@@ -3,7 +3,8 @@ import Story from '../components/Story';
 
 class StoryContainer extends Component {
   render() {
-    return <Story contents={this.state.contents} />
+    // return <Story contents={this.state.contents} />
+    return <Story />
   }
 }
 
