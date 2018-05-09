@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css'
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="topLeft">
-        <a href="#" className="navbar-title">Never<br/>Ending<br/>Story</a>
+        <a href="/" className="navbar-title">Never<br/>Ending<br/>Story</a>
       </div>
       <div className="bottom">
         <a href="#">Link 1</a>
