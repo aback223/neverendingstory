@@ -20,11 +20,13 @@ body, #root {
 .navbar {
   background: #ff69b4;
   width: 270px;
+  overflow: hidden;
 }
 
 .storyContainer {
   background: aliceblue;
   width: 100%;
+  overflow: scroll;
 }
 
 .navbar, .storyContainer {
