@@ -10,18 +10,18 @@ body, #root {
 a.navbar-title {
   font-family: 'Bungee Shade', cursive;
   font-size: 40px;
-}
+} 
 
 .homepageContainer {
   height: 100%;
   display: flex;
+  overflow: hidden;
 }
 
 .navbar {
   padding: 10px;
   background: #ff69b4;
   width: 250px;
-  overflow: hidden;
   flex-shrink: 0;
 }
 
@@ -29,11 +29,7 @@ a.navbar-title {
   flex-direction: column;
   background: aliceblue;
   width: 100%;
-  overflow: scroll;
-}
-
-.storyContainer .bottom {
-  margin-top: 50px;
+  display: flex;
 }
 
 .topLeft {
@@ -41,19 +37,26 @@ a.navbar-title {
 }
 
 .topRight {
-  overflow: hidden;
-  position: fixed;
   top: 10;
-  background-color: black;
+  width: 100%;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+form.storyInput textarea{
+  font-size: 30px;
+  box-sizing: border-box;
+  resize: none;
   width: 100%;
 }
 
-.content {
+.bottomContent {
   font-family: 'Roboto Slab', serif;
   font-size: 50px;
+  overflow-y: auto;
 }
 
-.bottom a {
+.bottomNavbar a {
   display: block;
   padding: 10px;
   font-family: 'Roboto Mono', monospace;
@@ -61,7 +64,7 @@ a.navbar-title {
   text-align: center;
 }
 
-.bottom a, a:visited, a.navbar-title {
+.bottomNavbar a, a:visited, a.navbar-title {
   text-decoration: none;
   color: black;
 }
