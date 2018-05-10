@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Story from '../components/Story';
-import StoryInput from '../components/StoryInput';
+import StoryInput from './StoryInput';
 
 class StoryContainer extends Component {
   render() {
