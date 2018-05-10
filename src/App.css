@@ -30,6 +30,7 @@ a.navbar-title {
   flex-direction: column;
   background: aliceblue;
   display: flex;
+  width: 100%;
 }
 
 .topLeft {
@@ -60,7 +61,6 @@ form.storyInput textarea::placeholder {
   font-size: 20px;
 
 }
-
 
 .bottomContent {
   font-family: 'Roboto Slab', serif;
