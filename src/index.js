@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
 
 //const rootReducer = combineReducers({usersReducer}); //import and add reducers
 const store = createStore(
