@@ -78,3 +78,9 @@ form.storyInput textarea{
 a:hover, a.navbar-title:hover {
   color: white;
 }
+
+input[type=submit] {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
