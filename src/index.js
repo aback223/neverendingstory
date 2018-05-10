@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
-//const rootReducer = combineReducers({usersReducer}); //import and add reducers
+const rootReducer = combineReducers({});
 const store = createStore(
   rootReducer, 
   applyMiddleware(thunk),
@@ -14,7 +14,7 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App store={store} /> 
+    <App /> 
   </Provider>, 
   document.getElementById('root')
 );
