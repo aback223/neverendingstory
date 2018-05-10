@@ -6,7 +6,7 @@ class StoryInput extends Component {
       <form className="storyInput">
         <textarea
           type="text" 
-          placeholder="What do you think should happen next?"/>
+          placeholder="What happens next?"/>
         <input type="submit" />
       </form>
     )
