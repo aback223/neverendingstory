@@ -47,13 +47,20 @@ a.navbar-title {
 }
 
 form.storyInput textarea{
-  font-size: 30px;
+  font-size: 20px;
   resize: none;
   height: 200px;
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
 }
+
+form.storyInput textarea::placeholder {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+
+}
+
 
 .bottomContent {
   font-family: 'Roboto Slab', serif;
