@@ -21,6 +21,9 @@ class StoryInput extends Component {
     event.preventDefault();
     const content = {...this.state}
     this.props.addContent(content)
+    this.setState({
+      content: ''
+    })
   }
 
   render() {
