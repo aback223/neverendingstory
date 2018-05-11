@@ -1,16 +1,44 @@
 import React, { Component } from 'react';
+import { addContent } from '../actions/contents';
+import { connect } from 'react-redux';
 
 class StoryInput extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      content: ''
+    }
+  }
+
+  handleChange = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
+  handleSubmit = event => {
+    event.preventDefault();
+    
+  }
+
   render() {
     return (
-      <form className="storyInput">
+      <form className="storyInput" onSubmit={this.handleSubmit}>
         <textarea
           type="text" 
-          placeholder="What happens next?"/>
+          name="content"
+          placeholder="What happens next?"
+          value={this.props.content}
+          onChange={this.handleChange}/>
         <input type="submit" />
+        {this.props.content}
       </form>
     )
   }
 }
 
-export default StoryInput;
+const mapStateToProps = (state) => {
+  return { content: state.content };
+};
+
+export default connect(mapStateToProps)(StoryInput);
