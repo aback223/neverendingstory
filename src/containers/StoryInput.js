@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 class StoryInput extends Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
       content: ''
     }
@@ -19,20 +19,21 @@ class StoryInput extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    
+    const content = {...this.state}
+    this.props.addContent(content)
   }
 
   render() {
+    debugger;
     return (
       <form className="storyInput" onSubmit={this.handleSubmit}>
         <textarea
           type="text" 
           name="content"
           placeholder="What happens next?"
-          value={this.props.content}
+          value={this.state.content}
           onChange={this.handleChange}/>
         <input type="submit" />
-        {this.props.content}
       </form>
     )
   }
