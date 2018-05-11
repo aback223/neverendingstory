@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import Content from './Content';
 
 class StoryContents extends Component {
   render() {
+    const { contents } = this.props;
     return (
       <div className="bottomContent">
         Once upon a time...
-
+        {contents.map(content => <Content content={content} />)}
       </div>
     )
   }
 }
 
-const mapStateToProps = (state) => {
-  return { contents: state.contents };
-};
-
-export default connect(mapStateToProps)(StoryContents);
+export default StoryContents;
