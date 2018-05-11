@@ -39,14 +39,10 @@ class StoryInput extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return { content: state.content };
-};
-
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     addContent: addContent
   }, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(StoryInput);
+export default connect(null, mapDispatchToProps)(StoryInput);
