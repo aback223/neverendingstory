@@ -58,7 +58,7 @@ form.storyInput textarea{
 
 form.storyInput textarea::placeholder {
   font-family: 'Roboto Slab', serif;
-  font-size: 20px;
+  font-size: 50px;
 
 }
 
