@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { addContent } from '../actions/contents';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 class StoryInput extends Component {
   constructor(props) {
