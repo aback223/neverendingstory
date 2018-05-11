@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Story from '../components/Story';
+import StoryContents from '../components/StoryContents';
 import StoryInput from './StoryInput';
 
 class StoryContainer extends Component {
@@ -7,7 +7,7 @@ class StoryContainer extends Component {
     return (
     <div className="storyContainer">
       <div className="topRight"><StoryInput /></div>
-      <Story />
+      <StoryContents />
     </div>
     )
   }
