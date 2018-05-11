@@ -42,4 +42,10 @@ const mapStateToProps = (state) => {
   return { content: state.content };
 };
 
-export default connect(mapStateToProps)(StoryInput);
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    addContent: addContent
+  }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(StoryInput);
