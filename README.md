@@ -1,6 +1,6 @@
-#NeverEndingStory
+# NeverEndingStory
 
-##Description
+## Description
 This is the story that never ends. What will happen next? The fate of this story is in your hands. 
 
 ## Contributing 
