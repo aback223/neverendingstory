@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 import storyReducer from './reducers/StoryReducer';
 
 const store = createStore(
-  storyReducer, 
+  storyReducer,
   applyMiddleware(thunk),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
