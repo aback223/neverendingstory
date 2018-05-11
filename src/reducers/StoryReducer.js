@@ -1,7 +1,7 @@
-export default function storyReducer(state = { content: [] }, action) {
+export default function storyReducer(state = { contents: [] }, action) {
   switch(action.type) {
     case 'ADD_CONTENT':
-      return { content: state.content.concat(action.content) };
+      return { contents: state.contents.concat(action.content) };
     default: 
       return state;
   }

@@ -11,7 +11,7 @@ class Story extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return { content: state.content };
+  return { contents: state.contents };
 };
 
 export default connect(mapStateToProps)(Story);
