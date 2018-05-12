@@ -3,10 +3,11 @@ import StoryContents from '../components/StoryContents';
 import StoryInput from './StoryInput';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { fetchContents } from '../actions/contents';
 
 class StoryContainer extends Component {
   componentDidMount() {
-    this.props.actions.fetchContents()
+    this.props.fetchContents()
   }
 
   render() {
@@ -23,7 +24,7 @@ const mapStateToProps = (state) => {
   return { contents: state.contents };
 };
 
-function mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     fetchContents: fetchContents
   }, dispatch)
