@@ -12,3 +12,11 @@ export function addContent(content) {
     .then(content => dispatch({ type: 'ADD_CONTENT', content: content }));
   };
 }
+
+export function fetchContents() {
+  return (dispatch) => {
+    return fetch('http://localhost:3000/story_contents')
+    .then(response => response.json())
+    .then(responseJSON => dispatch({ type: 'FETCH_CONTENTS', contents: responseJSON.contents }))
+  }
+}
