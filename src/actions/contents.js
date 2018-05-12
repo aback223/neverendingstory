@@ -17,6 +17,6 @@ export function fetchContents() {
   return (dispatch) => {
     return fetch('http://localhost:3000/story_contents')
     .then(response => response.json())
-    .then(responseJSON => dispatch({ type: 'FETCH_CONTENTS', contents: responseJSON.contents }))
+    .then(responseJSON => dispatch({ type: 'FETCH_CONTENTS', contents: responseJSON }))
   }
 }
