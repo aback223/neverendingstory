@@ -8,10 +8,7 @@ import storyReducer from './reducers/StoryReducer';
 
 const store = createStore(
   storyReducer, 
-  compose(
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), 
-    applyMiddleware(thunk)
-  )
+  applyMiddleware(thunk)
 );
 
 ReactDOM.render(
