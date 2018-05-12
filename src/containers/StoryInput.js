@@ -27,7 +27,6 @@ class StoryInput extends Component {
   }
 
   render() {
-    debugger;
     return (
       <form className="storyInput" onSubmit={this.handleSubmit}>
         <textarea
