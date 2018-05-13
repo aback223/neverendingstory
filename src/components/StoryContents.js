@@ -6,7 +6,7 @@ class StoryContents extends Component {
     const { contents } = this.props;
     return (
       <div className="bottomContent">
-        William Pigeon had always loved industrial Chicago with its cold, confused cliffs. It was a place where he felt puzzled.
+        William Pigeon had always loved industrial Chicago with its cold, confused cliffs. It was a place where he felt puzzled.{"\n\n"}
         {contents.map(content => <Content content={content} />)}
       </div>
     )
