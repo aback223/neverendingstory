@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import StoryContainer from './containers/StoryContainer';
+import About from './components/About';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={StoryContainer} />
+            <Route path="/about" component={About} />
           </Switch>
         </Router>
       </div>
