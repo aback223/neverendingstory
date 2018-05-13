@@ -2,7 +2,8 @@ import React from 'react';
 
 const About = ({content}) =>
   <div>
-    {content.content}{"\n\n"}
+    
+This is the story that never ends. What will happen next? The fate of this story is in your hands.
   </div>;
 
 export default About;
