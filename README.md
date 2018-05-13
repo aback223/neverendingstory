@@ -3,6 +3,8 @@
 ## Description
 This is the story that never ends. What will happen next? The fate of this story is in your hands. 
 
+Check out the [demo](https://neverendingstory.herokuapp.com/) here.
+
 ## Contributing 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/aback223/neverendingstory. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
