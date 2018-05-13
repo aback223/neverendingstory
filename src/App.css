@@ -78,13 +78,17 @@ form.storyInput textarea::placeholder {
   text-align: center;
 }
 
-.bottomNavbar a, a:visited, a.navbar-title {
+.bottomNavbar a, a:visited, a.navbar-title, .feedbackDiv a {
   text-decoration: none;
   color: black;
 }
 
 a:hover, a.navbar-title:hover {
   color: white;
+}
+
+.feedbackDiv a:hover {
+  color: #ff69b4;
 }
 
 input[type=submit] {
@@ -101,5 +105,10 @@ input[type=submit] {
 
 .aboutDiv {
   font-size: 40px;
+  padding: 100px 50px 40px 50px;
+}
+
+.feedbackDiv {
+  font-size: 30px;
   padding: 100px 50px 40px 50px;
 }
