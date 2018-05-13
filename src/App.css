@@ -92,3 +92,14 @@ input[type=submit] {
   border-radius: 5px;
   font-size: 20px;
 }
+
+.feedbackDiv, .aboutDiv {
+  background: aliceblue;
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+}
+
+.aboutDiv {
+  font-size: 40px;
+  padding: 100px 50px 40px 50px;
+}
