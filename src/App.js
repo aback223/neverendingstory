@@ -14,8 +14,8 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={StoryContainer} />
-            <Route path="/about" component={About} />
-            <Route path="/feedback" component={Feedback} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/feedback" component={Feedback} />
           </Switch>
         </Router>
       </div>
