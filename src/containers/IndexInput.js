@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { addStory } from '../actions/story';
 
 class IndexInput extends Component {
   constructor() {
@@ -37,6 +38,12 @@ class IndexInput extends Component {
       </form>
     )
   }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    addStory: addStory
+  }, dispatch)
 }
 
 export default IndexInput;
