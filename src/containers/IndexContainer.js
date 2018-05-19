@@ -6,6 +6,10 @@ import { bindActionCreators } from 'redux';
 import { fetchStories } from '../actions/story';
 
 class IndexContainer extends Component {
+  componentDidMount() {
+    this.props.fetchStories()
+  }
+
   render() {
     return (
       <div className="indexContainer">
