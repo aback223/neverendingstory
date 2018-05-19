@@ -102,7 +102,7 @@ a:hover, a.navbar-title:hover {
   margin: 5px;
 }
 
-.indexInput {
+.indexInput, .storyIndex {
   text-align: center;
 }
 
