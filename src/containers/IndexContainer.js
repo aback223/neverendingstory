@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import IndexInput from './IndexInput';
+import Index from '../components/Index';
 
 class IndexContainer extends Component {
   render() {
