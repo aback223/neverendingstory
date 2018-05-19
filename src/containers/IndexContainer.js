@@ -3,6 +3,7 @@ import IndexInput from './IndexInput';
 import Index from '../components/Index';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { fetchStories } from '../actions/story';
 
 class IndexContainer extends Component {
   render() {
@@ -19,4 +20,10 @@ const mapStateToProps = (state) => {
   return { stories: state.stories}
 }
 
-export default connect(mapStateToProps)(IndexContainer);
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    fetchStories: fetchStories
+  }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(IndexContainer);
