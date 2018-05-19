@@ -5,20 +5,21 @@ import Navbar from './components/Navbar';
 import StoryContainer from './containers/StoryContainer';
 import About from './components/About';
 import Feedback from './components/Feedback';
+import IndexContainer from './containers/IndexContainer';
 
 class App extends Component {
   render() {
     return (
-      <div className="homepageContainer">
-        <Navbar />
-        <Router>
-          <Switch>
-            <Route exact path="/" component={StoryContainer} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/feedback" component={Feedback} />
-          </Switch>
-        </Router>
-      </div>
+      <Router>
+        <div className="homepageContainer">
+          <Navbar />
+            <Switch>
+              <Route exact path="/" component={IndexContainer} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/feedback" component={Feedback} />
+            </Switch>
+        </div>
+      </Router>
     );
   }
 }
