@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Index = () => 
+const Index = ({stories}) => 
   <div className="storyIndex">
-    This is the index component.
+    {stories.map(story => <li>{story.title}</li>)}
   </div>
 
 export default Index;
