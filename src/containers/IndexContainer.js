@@ -9,14 +9,14 @@ class IndexContainer extends Component {
     return (
       <div className="indexContainer">
         <div className="topRight"><IndexInput /></div>
-        <Index />
+        <Index stories={this.props.stories} />
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
-  return { story: state.stories}
+  return { stories: state.stories}
 }
 
 export default connect(mapStateToProps)(IndexContainer);
