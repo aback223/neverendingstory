@@ -91,7 +91,7 @@ a:hover, a.navbar-title:hover {
   color: #ff69b4;
 }
 
-input[type=submit] {
+.storyInput input[type=submit] {
   padding: 10px;
   border-radius: 5px;
   font-size: 20px;
