@@ -15,4 +15,8 @@ class IndexContainer extends Component {
   }
 }
 
-export default IndexContainer;
+const mapStateToProps = (state) => {
+  return { story: state.stories}
+}
+
+export default connect(mapStateToProps)(IndexContainer);
