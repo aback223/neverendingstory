@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Index = () => 
-  <div>
+  <div className="storyIndex">
     This is the index component.
   </div>
 
