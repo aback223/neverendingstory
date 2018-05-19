@@ -97,6 +97,23 @@ a:hover, a.navbar-title:hover {
   font-size: 20px;
 }
 
+.indexInput input[type=text], .indexInput input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+}
+
+.indexInput {
+  text-align: center;
+}
+
+.indexInput input[type=submit] {
+  border-radius: 5px;
+}
+
+.indexInput input[type=text] {
+  width: 200px;
+}
+
 .feedbackDiv, .aboutDiv {
   background: aliceblue;
   width: 100%;
