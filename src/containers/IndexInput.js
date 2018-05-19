@@ -19,7 +19,7 @@ class IndexInput extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const title = this.state.title
+    const title = {...this.state}
     this.props.addStory(title)
     this.setState({
       title: ''
@@ -46,4 +46,4 @@ const mapDispatchToProps = (dispatch) => {
   }, dispatch)
 }
 
-export default IndexInput;
+export default connect(null, mapDispatchToProps)(IndexInput);
