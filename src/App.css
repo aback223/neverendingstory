@@ -38,7 +38,7 @@ a.navbar-title {
 }
 
 .topRight {
-  display: inline-flex;
+  display: column;
   flex-shrink: 0;
 }
 
