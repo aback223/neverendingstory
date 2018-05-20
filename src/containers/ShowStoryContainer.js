@@ -15,7 +15,7 @@ class ShowStoryContainer extends Component {
     if (this.props.story !== undefined ) {
       contents = 
         <div className="showStory">
-          <StoryContainer title={this.props.story.title} contents={this.props.story.contents} storyId={this.props.story.id} />
+          <StoryContainer title={this.props.story.title} storyId={this.props.story.id} />
         </div>
     } else {
       contents = 
@@ -37,6 +37,5 @@ const mapDispatchToProps = (dispatch) => {
     fetchStoryById: fetchStoryById
   }, dispatch)
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShowStoryContainer);
