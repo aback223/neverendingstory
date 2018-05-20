@@ -114,7 +114,7 @@ a:hover, a.navbar-title:hover {
   width: 200px;
 }
 
-.feedbackDiv, .aboutDiv {
+.feedbackDiv, .aboutDiv, .showStory {
   background: aliceblue;
   width: 100%;
   font-family: 'Roboto Slab', serif;
