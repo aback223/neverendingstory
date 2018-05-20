@@ -42,6 +42,10 @@ a.navbar-title {
   flex-shrink: 0;
 }
 
+.showStoryTitle {
+  padding: 10px;
+}
+
 .topRight form {
   width: 100%;
   padding: 10px;
