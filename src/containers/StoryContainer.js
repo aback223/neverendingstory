@@ -7,8 +7,10 @@ class StoryContainer extends Component {
   render() {
     return (
     <div className="storyContainer">
+      <div className="showStoryTitle">
+        <label><strong>Title:</strong></label> {this.props.title}
+      </div>
       <div className="topRight">
-        <div className="showStoryTitle">Title: {this.props.title}</div>
         <StoryInput />
       </div>
       <StoryContents contents={this.props.contents} />
