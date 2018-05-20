@@ -99,15 +99,15 @@ a:hover, a.navbar-title:hover {
 .storyInput input[type=submit] {
   padding: 10px;
   border-radius: 5px;
-  font-size: 20px;
 }
 
 .indexInput input[type=text], .indexInput input[type=submit] {
-  padding: 10px;
+  padding: 20px;
   margin: 5px;
+  font-size: 20px;
 }
 
-.indexInput, .storyIndex, .aboutDiv {
+.aboutDiv {
   text-align: center;
 }
 
@@ -116,7 +116,7 @@ a:hover, a.navbar-title:hover {
 }
 
 .indexInput input[type=text] {
-  width: 200px;
+  width: 350px;
 }
 
 .feedbackDiv, .aboutDiv, .showStory {
@@ -133,4 +133,32 @@ a:hover, a.navbar-title:hover {
 .feedbackDiv {
   font-size: 30px;
   padding: 100px 50px 40px 50px;
+}
+
+.titles {
+  padding: 10px;
+}
+
+.storyIndex a {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+}
+
+.storyIndex a:hover {
+  color: #ff69b4;
+}
+
+.storyIndex {
+  overflow-y: auto;
+  margin-left: 20px;
+}
+
+.storyIndex ul {
+  font-size: 40px;
+  margin: 0;
+}
+
+.storyIndex li {
+  padding: 10px;
 }
