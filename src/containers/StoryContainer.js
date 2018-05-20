@@ -4,6 +4,7 @@ import StoryInput from './StoryInput';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchContents } from '../actions/contents';
+import PropTypes from 'prop-types';
 
 class StoryContainer extends Component {
   componentDidMount() {
@@ -19,6 +20,7 @@ class StoryContainer extends Component {
     )
   }
 }
+
 
 const mapStateToProps = (state) => {
   return { contents: state.contents };
