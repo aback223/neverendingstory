@@ -20,7 +20,7 @@ class StoryInput extends Component {
   handleSubmit = event => {
     event.preventDefault();
     const content = {...this.state}
-    this.props.addContent(content)
+    this.props.addContent(this.props.storyId, content)
     this.setState({
       content: ''
     })
