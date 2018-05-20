@@ -4,6 +4,7 @@ import Index from '../components/Index';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchStories } from '../actions/story';
+import PropTypes from 'prop-types';
 
 class IndexContainer extends Component {
   componentDidMount() {
