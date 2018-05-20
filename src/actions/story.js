@@ -20,3 +20,11 @@ export function fetchStories() {
     .then(responseJSON => dispatch({ type: 'FETCH_STORIES', stories: responseJSON }))
   }
 }
+
+export function fetchStoryById(storyId) {
+  return (dispatch) => {
+    return fetch(`http://localhost:3000/story/${storyId}`)
+    .then(response => response.json())
+    .then(story => dispatch({ type: 'FETCH_STORY', story }))
+  }
+}
