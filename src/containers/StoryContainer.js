@@ -11,7 +11,7 @@ class StoryContainer extends Component {
         <label><strong>Title:</strong></label> {this.props.title}
       </div>
       <div className="topRight">
-        <StoryInput />
+        <StoryInput storyId={this.props.storyId}/>
       </div>
       <StoryContents contents={this.props.contents} />
     </div>
