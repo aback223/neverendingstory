@@ -7,7 +7,7 @@ export default function storyReducer(state = { stories:[], story: undefined, con
     case 'ADD_STORY':
       return { stories: state.stories.concat(action.title) }
     case 'ADD_CONTENT':
-      return { contents: state.contents.concat(action.content) };
+      return {...state, contents: state.contents.concat(action.content) };
     case 'FETCH_CONTENTS':
       return {...state, contents: action.contents}
     default: 
