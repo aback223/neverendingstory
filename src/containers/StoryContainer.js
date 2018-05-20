@@ -8,7 +8,7 @@ import { bindActionCreators } from 'redux';
 
 class StoryContainer extends Component {
   componentDidMount() {
-    this.props.fetchContents()
+    this.props.fetchContents(this.props.storyId)
   }
 
   render() {
@@ -26,6 +26,16 @@ class StoryContainer extends Component {
   }
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    fetchContents: fetchContents
+  }, dispatch)
+}
+
+const mapStateToProps = (state) => {
+  return { contents: state.contents }
+}
+
 StoryContainer.defaultProps = {
   contents: []
 };
@@ -34,4 +44,4 @@ StoryContainer.propTypes = {
   contents: PropTypes.array
 };
 
-export default StoryContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(StoryContainer);
