@@ -38,12 +38,13 @@ a.navbar-title {
 }
 
 .topRight {
-  display: column;
+  display: flex;
   flex-shrink: 0;
 }
 
 .showStoryTitle {
   padding: 10px;
+  font-size: 30px;
 }
 
 .topRight form {
