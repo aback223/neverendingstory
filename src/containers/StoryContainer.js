@@ -2,8 +2,15 @@ import React, { Component } from 'react';
 import StoryContents from '../components/StoryContents';
 import StoryInput from './StoryInput';
 import PropTypes from 'prop-types';
+import { fetchContents } from '../actions/contents';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 class StoryContainer extends Component {
+  componentDidMount() {
+    this.props.fetchContents()
+  }
+
   render() {
     return (
     <div className="storyContainer">
