@@ -21,6 +21,14 @@ class IndexContainer extends Component {
   }
 }
 
+IndexContainer.defaultProps = {
+  stories: []
+}
+
+IndexContainer.propTypes = {
+  stories: PropTypes.array
+}
+
 const mapStateToProps = (state) => {
   return { stories: state.stories}
 }
