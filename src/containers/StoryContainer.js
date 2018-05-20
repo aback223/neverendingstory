@@ -21,6 +21,13 @@ class StoryContainer extends Component {
   }
 }
 
+StoryContainer.defaultProps = {
+  contents: []
+};
+
+StoryContainer.propTypes = {
+  contents: PropTypes.array
+};
 
 const mapStateToProps = (state) => {
   return { contents: state.contents };
@@ -30,6 +37,6 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     fetchContents: fetchContents
   }, dispatch)
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(StoryContainer);
