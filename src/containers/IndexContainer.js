@@ -12,10 +12,19 @@ class IndexContainer extends Component {
   }
 
   render() {
+    let stories;
+    if (this.props.stories === undefined || this.props.stories.length === 0 ) {
+      stories = 
+      <div className="noStories">
+        There aren't any stories yet. 
+      </div>
+    } else {
+      <Index stories={this.props.stories} />
+    }
     return (
       <div className="indexContainer">
         <div className="topRight"><IndexInput /></div>
-        <Index stories={this.props.stories} />
+        {stories}
       </div>
     )
   }
