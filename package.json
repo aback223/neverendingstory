@@ -5,10 +5,12 @@
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.6",
     "@fortawesome/react-fontawesome": "0.0.19",
+    "font-awesome": "^4.7.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
