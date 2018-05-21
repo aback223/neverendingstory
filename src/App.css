@@ -99,6 +99,7 @@ a:hover, a.navbar-title:hover {
 .storyInput input[type=submit] {
   padding: 10px;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 .indexInput input[type=text], .indexInput input[type=submit] {
