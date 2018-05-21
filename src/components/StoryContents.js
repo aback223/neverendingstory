@@ -10,5 +10,4 @@ const StoryContents = ({ contents }) => {
   )
 }
 
-
 export default StoryContents;
