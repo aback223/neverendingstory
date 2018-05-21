@@ -155,6 +155,11 @@ a:hover, a.navbar-title:hover {
   margin-left: 20px;
 }
 
+.noStories {
+  font-size: 40px;
+  margin: 20px 0px 0px 20px;
+}
+
 .storyIndex ul {
   font-size: 40px;
   margin: 0;
