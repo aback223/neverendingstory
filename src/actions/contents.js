@@ -1,6 +1,6 @@
-export function addContent(content) {
+export function addContent(storyId, content) {
   return (dispatch)  => {
-    return fetch('https://nes-api.herokuapp.com/story_contents', {
+    return fetch(`http://localhost:3000/story/${storyId}/content`, {
       method: 'POST', 
       headers: {
         Accept: 'application/json', 
@@ -13,9 +13,9 @@ export function addContent(content) {
   };
 }
 
-export function fetchContents() {
+export function fetchContents(storyId) {
   return (dispatch) => {
-    return fetch('https://nes-api.herokuapp.com/story_contents')
+    return fetch(`http://localhost:3000/story/${storyId}/content`)
     .then(response => response.json())
     .then(responseJSON => dispatch({ type: 'FETCH_CONTENTS', contents: responseJSON }))
   }
