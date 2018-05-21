@@ -19,7 +19,7 @@ class IndexContainer extends Component {
         There aren't any stories yet. 
       </div>
     } else {
-      <Index stories={this.props.stories} />
+      stories = <Index stories={this.props.stories} />
     }
     return (
       <div className="indexContainer">
