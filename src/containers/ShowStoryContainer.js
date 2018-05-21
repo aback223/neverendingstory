@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchStoryById } from '../actions/story';
 import StoryContainer from './StoryContainer';
+import Unavailable from '../components/Unavailable';
 
 class ShowStoryContainer extends Component {
   componentDidMount() {
@@ -17,10 +18,10 @@ class ShowStoryContainer extends Component {
         <div className="showStory">
           <StoryContainer title={this.props.story.title} storyId={this.props.story.id} />
         </div>
-    } else {
+    } else if (this.props.story === undefined) {
       contents = 
-        <div className="showStory">
-          Nothing to see here. 
+        <div className="unavailable">
+          <Unavailable />
         </div>
     }
 
