@@ -24,7 +24,14 @@ export function fetchStories() {
 export function fetchStoryById(storyId) {
   return (dispatch) => {
     return fetch(`http://localhost:3000/story/${storyId}`)
-    .then(response => response.json())
+    .then(response => {
+      if (response.status === 404) {
+        Promise.reject();
+      }
+      else {
+        return response.json()
+      }
+    })
     .then(story => dispatch({ type: 'FETCH_STORY', story }))
   }
 }
