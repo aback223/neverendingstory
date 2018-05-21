@@ -108,7 +108,7 @@ a:hover, a.navbar-title:hover {
   font-size: 20px;
 }
 
-.aboutDiv {
+.aboutDiv, .unavailable {
   text-align: center;
 }
 
@@ -120,7 +120,7 @@ a:hover, a.navbar-title:hover {
   width: 350px;
 }
 
-.feedbackDiv, .aboutDiv, .showStory {
+.feedbackDiv, .aboutDiv, .showStory, .unavailable {
   background: aliceblue;
   width: 100%;
   font-family: 'Roboto Slab', serif;
@@ -162,4 +162,17 @@ a:hover, a.navbar-title:hover {
 
 .storyIndex li {
   padding: 10px;
+}
+
+.unavailable .error {
+  font-size: 300px;
+  margin: auto;
+}
+
+i.fa {
+  font-size: 80px;
+}
+
+.errorDesc {
+  font-size: 20px;
 }
