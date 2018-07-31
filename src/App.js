@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import ShowStoryContainer from './containers/ShowStoryContainer';
 import IndexContainer from './containers/IndexContainer';
+import LoginContainer from './containers/LoginContainer';
+import SignupContainer from './containers/SignupContainer';
 
 class App extends Component {
   render() {
@@ -12,11 +14,13 @@ class App extends Component {
       <Router>
         <div className="homepageContainer">
           <Navbar />
-            <Switch>
-              <Route exact path="/" component={About} />
-              <Route exact path='/stories' component={IndexContainer} />
-              <Route exact path='/stories/:id' component={ShowStoryContainer} />
-            </Switch>
+          <Switch>
+            <Route exact path="/" component={About} />
+            <Route exact path='/stories' component={IndexContainer} />
+            <Route exact path='/stories/:id' component={ShowStoryContainer} />
+            <Route exact path='/login' component={LoginContainer} />
+            <Route exact path='/signup' component={SignupContainer} />
+          </Switch>
         </div>
       </Router>
     );
