@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 
-class LoginContainer extends Component {
+export default class LoginContainer extends Component {
   constructor(props) {
     super(props);
 
@@ -23,14 +23,24 @@ class LoginContainer extends Component {
 
   render() {
     return (
-      <div className="login">
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Username
+      <div className="login-container">
+        <div>
+          <form className="login-form" onSubmit={this.handleSubmit}>
+            <label>
+              Username
+            </label>
             <input type="text" name="name" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+            <label>
+              Email
+            </label>
+            <input type="text" name="email" />
+            <label>
+              Password
+            </label>
+            <input type="password" name="password" />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     )
   }
