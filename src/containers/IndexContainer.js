@@ -13,14 +13,8 @@ class IndexContainer extends Component {
 
   render() {
     let stories;
-    if (this.props.stories === undefined || this.props.stories.length === 0 ) {
-      stories = 
-      <div className="noStories">
-        There aren't any stories yet. 
-      </div>
-    } else {
-      stories = <Index stories={this.props.stories} />
-    }
+    this.props.stories.length ? stories = <Index stories={this.props.stories} /> : stories = <p> No stories yet :(</p>;
+
     return (
       <div className="indexContainer">
         <div className="topRight"><IndexInput /></div>
