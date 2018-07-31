@@ -24,25 +24,45 @@ export default class SignupContainer extends Component {
   render() {
     return (
       <div className="signup-container">
-        <div>
+        <div className="signup-wrapper">
           <h1 className="signup-header">Sign Up</h1>
           <form className="login-form" onSubmit={this.handleSubmit}>
             <label>
               Username
             </label>
-            <input type="text" name="name" />
+            <input 
+              type="text" 
+              name="name"
+              value={this.state.username} 
+              onChange={this.handleChange}
+            />
             <label>
               Email
             </label>
-            <input type="text" name="email" />
+            <input 
+              type="text" 
+              name="email" 
+              value={this.state.email}
+              onChange={this.handleChange}
+            />
             <label>
               Password
             </label>
-            <input type="password" name="password" />
+            <input 
+              type="password" 
+              name="password" 
+              value={this.state.password} 
+              onChange={this.handleChange}
+            />
             <label>
               Confirm Password
             </label>
-            <input type="password" name="confirm-password" />
+            <input 
+              type="password" 
+              name="confirm-password"
+              value={this.state.confirmPass} 
+              onChange={this.handleChange}
+            />
             <input type="submit" value="Sign Up" />
           </form>
         </div>

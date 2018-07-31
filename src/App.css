@@ -55,7 +55,7 @@ a.navbar-title {
   overflow: hidden;
 }
 
-.storyContainer, .indexContainer, .login-container {
+.storyContainer, .indexContainer, .login-container, .signup-container {
   flex-direction: column;
   background: aliceblue;
   display: flex;
@@ -83,23 +83,22 @@ a.navbar-title {
   padding: 100px 50px 40px 50px;
 }
 
-.feedbackDiv {
-  font-size: 30px;
-  padding: 100px 50px 40px 50px;
-}
-
 .storyIndex {
   overflow-y: auto;
   margin-left: 20px;
 }
 
-
-.login-container {
+.login-container, .signup-container {
   display: flex;
   justify-content: center;
   text-align: left;
 }
 
+.login-wrapper, .signup-wrapper {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
 
 /** forms **/
 
@@ -143,16 +142,17 @@ form.storyInput textarea::placeholder {
 }
 
 .login-form {
-  width: 400px;
-  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .login-form input {
-  width: 100%;
-  padding: 20px 0 20px 0;
-  margin: 10px 0 10px 0;
+  width: auto;
+  padding: 15px 10px 15px 10px;
   border-radius: 3px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .login-form label {
@@ -161,6 +161,13 @@ form.storyInput textarea::placeholder {
 
 .login-form input[type=submit] {
   padding: 20px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #4EC0F0;
+  color: white;
+}
+.login-form input[type=submit]:hover {
+  background-color: #11B8FF;
 }
 
 /** Links **/
@@ -244,3 +251,12 @@ i.fa {
   font-family: 'Roboto Slab', serif;
   font-size: 28px;
 }
+
+.signup-header, .login-header {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0 20px 0;
+}
+
+

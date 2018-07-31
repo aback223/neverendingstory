@@ -24,7 +24,7 @@ export default class LoginContainer extends Component {
   render() {
     return (
       <div className="login-container">
-        <div>
+        <div className="login-wrapper">
           <h1 className="login-header">Login</h1>
           <form className="login-form" onSubmit={this.handleSubmit}>
             <label>
