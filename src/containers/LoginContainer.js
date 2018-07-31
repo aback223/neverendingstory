@@ -25,6 +25,7 @@ export default class LoginContainer extends Component {
     return (
       <div className="login-container">
         <div>
+          <h1 className="login-header">Login</h1>
           <form className="login-form" onSubmit={this.handleSubmit}>
             <label>
               Username
@@ -38,7 +39,7 @@ export default class LoginContainer extends Component {
               Password
             </label>
             <input type="password" name="password" />
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Login" />
           </form>
         </div>
       </div>
