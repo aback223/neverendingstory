@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto+Mono|Roboto+Slab|Bahiana');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto+Mono|Roboto+Slab|Roboto|Bahiana');
 
 html,
 body, #root {
@@ -19,6 +19,9 @@ a.navbar-title {
   flex-shrink: 0;
   box-sizing: border-box;
   width: 250px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .bottomContent {
@@ -34,8 +37,14 @@ a.navbar-title {
   text-align: center;
 }
 
-.bottomNavbar {
-  padding-top: 30px;
+.bottom-navbar {
+  padding-top: 40px;
+}
+
+.navbar-login {
+  width: calc(100% - 20px);
+  position: absolute;
+  bottom: 20px;
 }
 
 /** containers **/
@@ -46,7 +55,7 @@ a.navbar-title {
   overflow: hidden;
 }
 
-.storyContainer, .indexContainer {
+.storyContainer, .indexContainer, .login-container {
   flex-direction: column;
   background: aliceblue;
   display: flex;
@@ -62,9 +71,10 @@ a.navbar-title {
   text-align: center;
 }
 
-.feedbackDiv, .aboutDiv, .showStory, .unavailable {
+.aboutDiv, .showStory, .unavailable {
   background: aliceblue;
   width: 100%;
+  height: 100%;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -82,6 +92,14 @@ a.navbar-title {
   overflow-y: auto;
   margin-left: 20px;
 }
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
 
 /** forms **/
 
@@ -124,8 +142,29 @@ form.storyInput textarea::placeholder {
   width: 350px;
 }
 
+.login-form {
+  width: 400px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 20px 0 20px 0;
+  margin: 10px 0 10px 0;
+  border-radius: 3px;
+}
+
+.login-form label {
+  text-align: left;
+}
+
+.login-form input[type=submit] {
+  padding: 20px;
+}
+
 /** Links **/
-.bottomNavbar a {
+.bottom-navbar a {
   display: block;
   padding: 10px;
   font-family: 'Roboto Mono', monospace;
@@ -133,17 +172,20 @@ form.storyInput textarea::placeholder {
   text-align: center;
 }
 
-.bottomNavbar a, a:visited, a.navbar-title, .feedbackDiv a {
+.navbar-login a {
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bottom-navbar a, a:visited, a.navbar-title, .navbar-login a {
   text-decoration: none;
   color: black;
 }
 
 a:hover, a.navbar-title:hover {
   color: white;
-}
-
-.feedbackDiv a:hover {
-  color: #ff69b4;
 }
 
 .storyIndex a {
@@ -156,6 +198,9 @@ a:hover, a.navbar-title:hover {
   color: #00e3eb;
 }
 
+.navbar-login a {
+  padding-top: 10px;
+}
 /** text/misc **/
 
 .showStoryTitle {
