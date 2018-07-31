@@ -23,15 +23,16 @@ export function fetchStories() {
 
 export function fetchStoryById(storyId) {
   return (dispatch) => {
+    dispatch({ type: 'LOADING_STORY', status: "loading"})
     return fetch(`http://localhost:3000/story/${storyId}`)
     .then(response => {
       if (response.status === 404) {
         Promise.reject();
-      }
-      else {
+        dispatch({type: 'FETCH_FAIL', status: "failed"})
+      } else {
         return response.json()
       }
     })
-    .then(story => dispatch({ type: 'FETCH_STORY', story }))
+    .then(story => dispatch({ type: 'FETCH_STORY', story: story, status: "success" }))
   }
 }
