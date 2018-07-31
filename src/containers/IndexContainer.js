@@ -16,7 +16,7 @@ class IndexContainer extends Component {
     this.props.stories.length ? stories = <Index stories={this.props.stories} /> : stories = <p> No stories yet :(</p>;
 
     return (
-      <div className="indexContainer">
+      <div className="indexContainer"> 
         <div className="topRight"><IndexInput /></div>
         {stories}
       </div>
